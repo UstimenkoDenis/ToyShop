@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using ToyShop.data.models;
 
 namespace ToyShop.data.interfaces {
-    interface IToysCategory {
+    public interface IToysCategory {
         IEnumerable<Category> allCategories { get; }
     }
 }
