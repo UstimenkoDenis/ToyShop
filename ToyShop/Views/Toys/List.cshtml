@@ -1,0 +1,25 @@
+﻿@using ToyShop.data.models;
+@model IEnumerable<Toy>;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>List</title>
+</head>
+<body>
+    <h2>Все игрушки</h2>
+    @{
+        foreach(var toy in Model) {
+            <div>
+                <h3>Название: @toy.name</h3>
+                <p>Цена: @toy.price.ToString("c")</p><br>
+            </div>
+        };
+    }
+</body>
+</html>
