@@ -12,7 +12,7 @@ namespace ToyShop.data.mocks {
                 return new List<Category> {
                     new Category { categoryName = "Спокойная игра", desc = "Конструкторы, кубики, логические игры"},
                     new Category { categoryName = "Активная игра", desc = "Беговелы, машинки"}
-                }
+                };
             }
         }
     }

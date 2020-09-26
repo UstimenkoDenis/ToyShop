@@ -7,8 +7,8 @@ using ToyShop.data.models;
 namespace ToyShop.data.interfaces {
     interface IAllToys {
 
-        IEnumerable<Toy> Toys { get; set }
-        IEnumerable<Toy> getFavToy { get; set }
+        IEnumerable<Toy> Toys { get; }
+        IEnumerable<Toy> getFavToy { get; set; }
         Toy getObjectToy(int toyId);
 
     }
