@@ -10,8 +10,8 @@ namespace ToyShop.data.mocks {
         public IEnumerable<Category> allCategories {
             get {
                 return new List<Category> {
-                    new Category { categoryName = "Младенцы", desc = "Дети до одного года"},
-                    new Category { categoryName = "Активная игра", desc = "Игрушки для детей от года до трёх"}
+                    new Category { categoryName = "Спокойная игра", desc = "Конструкторы, кубики, логические игры"},
+                    new Category { categoryName = "Активная игра", desc = "Беговелы, машинки"}
                 }
             }
         }
