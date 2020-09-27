@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToyShop.data.interfaces;
+using ToyShop.ViewModels;
 
 namespace ToyShop.controllers {
     public class ToysController : Controller {
@@ -16,8 +17,10 @@ namespace ToyShop.controllers {
             _allCategories = iToysCat;
         }
         public ViewResult List() {
-            var toys = _allToys.Toys;
-            return View(toys);
+            ToysListViewModel obj = new ToysListViewModel();
+            obj.allToys = _allToys.Toys;
+            obj.currCategory = "Игрушки";
+            return View(obj);
         }
     }
 }

@@ -1,5 +1,5 @@
-﻿@using ToyShop.data.models;
-@model IEnumerable<Toy>;
+﻿@using ToyShop.ViewModels;
+@model ToysListViewModel;
 @{
     Layout = null;
 }
@@ -13,8 +13,9 @@
 </head>
 <body>
     <h2>Все игрушки</h2>
+    <h3>@Model.currCategory</h3>
     @{
-        foreach(var toy in Model) {
+        foreach(var toy in Model.allToys) {
             <div>
                 <h3>Название: @toy.name</h3>
                 <p>Цена: @toy.price.ToString("c")</p><br>
