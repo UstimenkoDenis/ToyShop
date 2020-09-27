@@ -17,6 +17,7 @@ namespace ToyShop.controllers {
             _allCategories = iToysCat;
         }
         public ViewResult List() {
+            ViewBag.Title = "Johannes Shell Toys";
             ToysListViewModel obj = new ToysListViewModel();
             obj.allToys = _allToys.Toys;
             obj.currCategory = "Игрушки";
