@@ -1,4 +1,5 @@
-﻿(function () {
+﻿// Header background
+(function () {
     const header = document.querySelector('.header')
 
     window.onscroll = () => {
