@@ -22,6 +22,9 @@
                             <a href="#" class="header__link">Главная</a>
                         </li>
                         <li class="header__item">
+                            <a href="#" class="header__link">Магазин</a>
+                        </li>
+                        <li class="header__item">
                             <a href="#" class="header__link">Корзина</a>
                         </li>
                         <li class="header__item">
@@ -53,13 +56,14 @@
                 </p>                
             </div>
         </div>
-        <section class="store">
+        <section class="store">            
             <div class="store__wrapper">
-               
+                <h2 class="store__title">Категория</h2>
+                <div class="store__cards">
+                    @RenderBody()
+                </div>
             </div>
-        </section>
-
-        @RenderBody()
+        </section>       
     </main>
     <script src="~/js/script.js"></script>
 </body>

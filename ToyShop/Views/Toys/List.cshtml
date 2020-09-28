@@ -1,11 +1,9 @@
-﻿<h2>Все игрушки</h2>
-<h3>@Model.currCategory</h3>
-@{
+﻿@{
     foreach(var toy in Model.allToys) {
         <div>
-            <h3>Название: @toy.name</h3>
-            <div class="card">
-                <img class="card-pic" src="@toy.img" alt="@toy.name"/>
+            <h3>@toy.name</h3>
+            <div class="store__card">
+                <img class="store__card-pic" src="@toy.img" alt="@toy.name"/>
             </div>
             
             <p>Цена: @toy.price.ToString("c")</p><br>
