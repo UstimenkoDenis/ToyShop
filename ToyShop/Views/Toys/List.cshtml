@@ -1,8 +1,8 @@
 ﻿@{
     foreach(var toy in Model.allToys) {
-        <div>
+        <div class="store__card">
             <h3>@toy.name</h3>
-            <div class="store__card">
+            <div class="store__card-img">
                 <img class="store__card-pic" src="@toy.img" alt="@toy.name"/>
             </div>
             
