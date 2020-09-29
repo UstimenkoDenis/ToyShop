@@ -2,14 +2,14 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewBag.Title</title>
-    <link href="~/css/reset.css" rel="stylesheet" />
-    <link href="~/css/style.css" rel="stylesheet" />    
+    <link href="/css/reset.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <header class="header header_active">
-        <div  class="container">
+    <header class="header">
+        <div class="container">
             <div class="header__row">
                 <div class="header__logo">
                     <a href="/Toys/List" class="header__logo-link">
@@ -45,7 +45,7 @@
                     <span class="burger__line burger__line_third"></span>
                 </div>
             </div>
-        </div>        
+        </div>
     </header>
     <main class="main">
         <div class="intro">
@@ -65,8 +65,8 @@
                         </li>
                         <li class="store__category">
                             <a class="store__cat-link" href="#!">Активная игра</a>
-                        </li>                       
-                    </ul>                 
+                        </li>
+                    </ul>
                 </div>
                 <div class="store__cards">
                     @RenderBody()
@@ -74,14 +74,13 @@
             </div>
         </section>
         <section class="about">
-
-        </section>          
+        </section>
         <footer class="footer">
             <span class="footer__text">
                 <a class="footer__link">Johannes Shell TOYS © Все права защищены   </a>
             </span>
         </footer>
     </main>
-    <script src="~/js/script.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 </html>
