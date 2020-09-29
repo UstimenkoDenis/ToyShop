@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ToyShop.data.models;
+using ToyShop.Data.models;
 
 namespace ToyShop.Data {
     public class AppDBContent : DbContext {
@@ -13,5 +14,7 @@ namespace ToyShop.Data {
 
         public DbSet<Toy> Toy { get; set; }
         public DbSet<Category> Category { get; set; }
+        public DbSet<ToyShopCartItem> ToyShopCartItem { get; set; }
+
     }
 }
