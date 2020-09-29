@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewBag.Title</title>
+    <link href="/css/reset.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <div class="header__logo">
+                    <a href="/Toys/List" class="header__logo-link">
+                        <img class="header__logo-pic" src="/img/logo.png" alt="Johannes Shell Store">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#" class="header__link">Главная</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Магазин</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Корзина</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Оформление заказа</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link">Мой аккаунт</a>
+                        </li>
+                    </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="intro">
+            <div class="container">
+                <h1 class="intro__title">Магазин деревянных игрушек</h1>
+                <p class="intro__subtitle">
+                    Игрушки ручной работы
+                </p>
+            </div>
+        </div>
+        <section class="store">
+            <div class="store__wrapper">
+                <div class="store__title">
+                    <ul class="store__list">
+                        <li class="store__category">
+                            <a class="store__cat-link" href="#!">Спокойная игра</a>
+                        </li>
+                        <li class="store__category">
+                            <a class="store__cat-link" href="#!">Активная игра</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="store__cards">
+                    @RenderBody()
+                </div>
+            </div>
+        </section>
+        <section class="about">
+        </section>
+        <footer class="footer">
+            <span class="footer__text">
+                <a class="footer__link">Johannes Shell TOYS © Все права защищены   </a>
+            </span>
+        </footer>
+    </main>
+    <script src="/js/script.js"></script>
+</body>
+</html>

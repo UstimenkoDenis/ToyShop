@@ -1,0 +1,13 @@
+﻿@{
+    foreach (var toy in Model.allToys) {        
+        <div class="store__card">
+            <div class="store__card-img">
+                <img class="store__card-pic" src="@toy.img" alt="@toy.name" />
+            </div>
+            <div class="store__card-category">@toy.Category</div>
+            <h3 class="store__card-name">@toy.name</h3>
+            <p class="store__card-price">@toy.price.ToString("c")</p>
+        </div>
+    };
+}
+
