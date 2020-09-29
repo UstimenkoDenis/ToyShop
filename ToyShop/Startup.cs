@@ -13,6 +13,7 @@ using ToyShop.data.interfaces;
 using ToyShop.data.mocks;
 using ToyShop.Data;
 using ToyShop.Data.Repository;
+using ToyShop.Data.models;
 
 namespace ToyShop
 {
@@ -29,8 +30,14 @@ namespace ToyShop
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllToys, ToyRepository>();
             services.AddTransient<IToysCategory, CategoryRepository>();
-           // services.AddMvc();
+            
+
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddScoped(sp => ToyShopCart.GetCart(sp));
+            // services.AddMvc();
             services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddMemoryCache();
+            services.AddSession();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +45,7 @@ namespace ToyShop
             app.UseDeveloperExceptionPage();
             app.UseStatusCodePages();
             app.UseStaticFiles();
+            app.UseSession();
             app.UseMvcWithDefaultRoute();
                        
             using (var scope = app.ApplicationServices.CreateScope()) {
