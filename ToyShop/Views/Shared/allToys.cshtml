@@ -1,0 +1,10 @@
+﻿@model Toy
+
+<div class="store__card">
+    <div class="store__card-img">
+        <img class="store__card-pic" src="@Model.img" alt="@Model.name" />
+    </div>
+    <div class="store__card-category">@Model.Category</div>
+    <h3 class="store__card-name">@Model.name</h3>
+    <p class="store__card-price">@Model.price.ToString("c")</p>
+</div>
