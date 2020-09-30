@@ -31,7 +31,7 @@ namespace ToyShop.Controllers {
         public RedirectToActionResult addToCart(int id) {
             var item = _toyRep.Toys.FirstOrDefault(i => i.id == id);
             if(item != null) {
-                _toyShopCart.addToCart(item);
+                _toyShopCart.AddToCart(item);
             }
             return RedirectToAction("Index");
         }

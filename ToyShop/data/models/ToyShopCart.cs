@@ -20,14 +20,14 @@ namespace ToyShop.Data.models {
             ISession session = services.GetRequiredService<IHttpContextAccessor>()?.HttpContext.Session;
             var context = services.GetService<AppDBContent>();
             string toyShopCartId = session.GetString("CartId") ?? Guid.NewGuid().ToString();
+
             session.SetString("CartId", toyShopCartId);
 
             return new ToyShopCart(context) { ToyShopCartId = toyShopCartId };
         }
 
-        public void addToCart(Toy toy) {
-            appDBContent.ToyShopCartItem.Add(new ToyShopCartItem
-            {
+        public void AddToCart(Toy toy) {
+            appDBContent.ToyShopCartItem.Add(new ToyShopCartItem {
                 ToyShopCartId = ToyShopCartId,
                 toy = toy,
                 price = toy.price

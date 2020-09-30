@@ -30,11 +30,12 @@ namespace ToyShop
             services.AddDbContext<AppDBContent>(options => options.UseSqlServer(_confString.GetConnectionString("DefaultConnection")));
             services.AddTransient<IAllToys, ToyRepository>();
             services.AddTransient<IToysCategory, CategoryRepository>();
-            
+            services.AddTransient<IAllOrders, OrdersRepository>();
+
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ToyShopCart.GetCart(sp));
-            // services.AddMvc();
+           // services.AddMvc();
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddMemoryCache();
             services.AddSession();

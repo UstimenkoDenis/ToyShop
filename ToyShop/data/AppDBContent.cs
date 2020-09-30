@@ -15,6 +15,8 @@ namespace ToyShop.Data {
         public DbSet<Toy> Toy { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<ToyShopCartItem> ToyShopCartItem { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<OrderDetail> OrderDetail { get; set; }
 
     }
 }
