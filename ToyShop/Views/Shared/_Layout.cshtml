@@ -19,20 +19,17 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li class="header__item">
-                            <a href="#" class="header__link">Главная</a>
+                            <a href="/" class="header__link">Главная</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Магазин</a>
+                            <a href="#shop" class="header__link">Магазин</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Корзина</a>
+                            <a href="/ToyShopCart/" class="header__link">Корзина</a>
                         </li>
                         <li class="header__item">
                             <a href="#" class="header__link">Оформление заказа</a>
-                        </li>
-                        <li class="header__item">
-                            <a href="#" class="header__link">Мой аккаунт</a>
-                        </li>
+                        </li>                        
                     </ul>
                     <div class="header__nav-close">
                         <span class="header__nav-close-line"></span>
@@ -56,15 +53,18 @@
                 </p>
             </div>
         </div>
-        <section class="store">
+        <section id="shop" class="store">
             <div class="store__wrapper">
                 <div class="store__title">
                     <ul class="store__list">
                         <li class="store__category">
-                            <a class="store__cat-link" href="#!">Спокойная игра</a>
+                            <a class="store__cat-link" href="/Toys/List">Все игрушки</a>
                         </li>
                         <li class="store__category">
-                            <a class="store__cat-link" href="#!">Активная игра</a>
+                            <a class="store__cat-link" href="/Toys/List/quiet">Спокойная игра</a>
+                        </li>
+                        <li class="store__category">
+                            <a class="store__cat-link" href="/Toys/List/active">Активная игра</a>
                         </li>
                     </ul>
                 </div>
@@ -77,7 +77,7 @@
         </section>
         <footer class="footer">
             <span class="footer__text">
-                <a class="footer__link">Johannes Shell TOYS © Все права защищены   </a>
+                <a class="footer__link">Johannes Shell TOYS © Все права защищены</a>
             </span>
         </footer>
     </main>

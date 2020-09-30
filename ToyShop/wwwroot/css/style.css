@@ -44,6 +44,16 @@ img {
     height: auto;
 }
 
+.bestseller {
+    width: 200px;
+    height:200px;  
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:70;
+    
+}
+
 .wrapper {
 }
 

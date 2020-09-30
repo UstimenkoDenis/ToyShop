@@ -59,7 +59,7 @@ namespace ToyShop.Data {
                         longDesc = "Детский беговел - для маленьких детей от одного года, которые учатся ходить. Сделан полностью из дерева и лишен острых углов - полностью безопасен для малыша. Очень устойчив и легок в управлении. Пользуется популярностью у детей обожающих активный отдых. Яркий игрушечный образ притягивают маленьких детей, зарождая у них любовь к спорту!",
                         img = "/img/hare.gif",
                         price = 4500,
-                        isFavourite = false,
+                        isFavourite = true,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -83,7 +83,7 @@ namespace ToyShop.Data {
                         longDesc = "Детский беговел - для маленьких детей от одного года, которые учатся ходить. Сделан полностью из дерева и лишен острых углов - полностью безопасен для малыша. Очень устойчив и легок в управлении. Пользуется популярностью у детей обожающих активный отдых. Яркий игрушечный образ притягивают маленьких детей, зарождая у них любовь к спорту!",
                         img = "/img/panda.gif",
                         price = 4500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -95,7 +95,7 @@ namespace ToyShop.Data {
                         longDesc = "Детский беговел - для маленьких детей от одного года, которые учатся ходить. Сделан полностью из дерева и лишен острых углов - полностью безопасен для малыша. Очень устойчив и легок в управлении. Пользуется популярностью у детей обожающих активный отдых. Яркий игрушечный образ притягивают маленьких детей, зарождая у них любовь к спорту!",
                         img = "/img/fox.gif",
                         price = 4500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -107,7 +107,7 @@ namespace ToyShop.Data {
                         longDesc = "Количество деталей в данном конструкторе не так велико. Да это и не главное, а главное то, что малыш начнет познавать первые шаги в конструировании, и будет очень рад, когда из четырех кубиков соберет свой первый трактор .",
                         img = "/img/t.gif",
                         price = 1500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -155,7 +155,7 @@ namespace ToyShop.Data {
                         longDesc = "Машина большого размера и все элементы удобны в управлении для малыша. Игрушка полностью из дерева, краски безопасные для детей. Цвета машинок можно задать при заказе",
                         img = "/img/autonew.gif",
                         price = 3000,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -191,7 +191,7 @@ namespace ToyShop.Data {
                         longDesc = "Радуги так же как и кубики занимают достойное место среди развивающих игрушек. Вариантов конструкций великое множество - что дает простор для фантазии ребёнка.",
                         img = "/img/rainbow.gif",
                         price = 2000,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Спокойная игра"],
 
@@ -203,7 +203,7 @@ namespace ToyShop.Data {
                         longDesc = "Игрушка выполнена в виде смешной машинки с разноцветными кляксами. Голова водителя держится на резинке. Дети очень любят с ней играться, пытаясь вытащить водителя из машины. Не беспокойтесь - голова держится крепко!",
                         img = "/img/shell.jpg",
                         price = 1000,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -215,7 +215,7 @@ namespace ToyShop.Data {
                         longDesc = "Изучайте цифры вместе с нами! Так же есть возможность выкладывать некоторые буквы Игрушка развивает мелкую моторику.",
                         img = "/img/numbers.gif",
                         price = 500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Спокойная игра"],
 
@@ -227,7 +227,7 @@ namespace ToyShop.Data {
                         longDesc = "Специально для девочек! Розовый автобус с четырьмя малышками! Данная игрушка развивает мелкую моторику и просто дарит отличное настроение!",
                         img = "/img/pink.gif",
                         price = 1500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
                     },
@@ -238,7 +238,7 @@ namespace ToyShop.Data {
                         longDesc = "Эта игрушка из серии автобусы, развивающие мелкую моторику, но необычная! Цвета каждого элемента были выбраны заказчиком индивидуально. Вы можете заказать игрушку любимых цветов вашего малыша.",
                         img = "/img/Bus.jpg",
                         price = 1500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -250,7 +250,7 @@ namespace ToyShop.Data {
                         longDesc = "Семья из четырех человек уселась в автобус и отправилась на пикник за город. Данная игрушка развивает мелкую моторику и просто дарит отличное настроение!",
                         img = "/img/busNEW.gif",
                         price = 1500,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 
@@ -262,7 +262,7 @@ namespace ToyShop.Data {
                         longDesc = "Игрушка большого размера и все детали удобно управляются маленьким ребенком. Из бревнышек можно сложить чудесный домик, что отлично развивает мелкую моторику! Сочетание активной игры с логической, делает эту машинку очень популярной.",
                         img = "/img/auto.jpg",
                         price = 3000,
-                        isFavourite = true,
+                        isFavourite = false,
                         available = true,
                         Category = Categories["Активная игра"],
 

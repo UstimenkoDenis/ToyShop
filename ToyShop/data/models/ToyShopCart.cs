@@ -25,7 +25,7 @@ namespace ToyShop.Data.models {
             return new ToyShopCart(context) { ToyShopCartId = toyShopCartId };
         }
 
-        public void AddToCart(Toy toy, int amount) {
+        public void addToCart(Toy toy) {
             appDBContent.ToyShopCartItem.Add(new ToyShopCartItem
             {
                 ToyShopCartId = ToyShopCartId,
