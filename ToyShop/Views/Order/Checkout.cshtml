@@ -1,0 +1,44 @@
+@model Order
+
+
+<div class="store__order store__order_center">
+    <h3 class="store__order-title">Оформление заказа</h3>
+    <form class="store__order-form store__order_center" asp-action="Checkout" method="post">
+        <div class="store__order-group">
+            <label class="store__order-label" asp-for="name"></label>
+            <div class="store__order-row store__order_center">
+                <input class="store__order-input" asp-for="name" />
+                <span class="store__order-danger" asp-validation-for="name"></span>
+            </div>
+        </div>
+        <div class="store__order-group">
+            <label class="store__order-label" asp-for="surname"></label>
+            <div class="store__order-row store__order_center">
+                <input class="store__order-input" asp-for="surname" />
+                <span class="store__order-danger" asp-validation-for="surname"></span>
+            </div>
+        </div>
+        <div class="store__order-group">
+            <label class="store__order-label" asp-for="adress"></label>
+            <div class="store__order-row store__order_center">
+                <input class="store__order-input" asp-for="adress" />
+                <span class="store__order-danger" asp-validation-for="adress"></span>
+            </div>
+        </div>
+        <div class="store__order-group">
+            <label class="store__order-label" asp-for="phone"></label>
+            <div class="store__order-row store__order_center">
+                <input class="store__order-input" asp-for="phone" />
+                <span class="store__order-danger" asp-validation-for="phone"></span>
+            </div>
+        </div>
+        <div class="store__order-group">
+            <label class="store__order-label" asp-for="email"></label>
+            <div class="store__order-row store__order_center">
+                <input class="store__order-input" asp-for="email" />
+                <span class="store__order-danger" asp-validation-for="email"></span>
+            </div>
+        </div>
+        <input class="store__order-btn" type="submit" value="Завершить заказ" />
+    </form>
+</div>

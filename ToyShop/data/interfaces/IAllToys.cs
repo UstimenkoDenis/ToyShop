@@ -8,7 +8,7 @@ namespace ToyShop.data.interfaces {
     public interface IAllToys {
 
         IEnumerable<Toy> Toys { get; }
-        IEnumerable<Toy> getFavToy { get; set; }
+        IEnumerable<Toy> getFavToy { get; }
         Toy getObjectToy(int toyId);
 
     }

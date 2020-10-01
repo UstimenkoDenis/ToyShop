@@ -1,0 +1,14 @@
+@model HomeViewModel
+<div class="store__bestsellers">
+    <div class="store__bestsellers-pic">
+        <img class="bestseller__img" src="~/img/bestsl.png" alt="best sellers">
+    </div>
+        
+</div>
+@{
+    foreach (Toy toy in Model.favToys)
+    {
+        @Html.Partial("AllToys", toy)
+        
+    };
+}

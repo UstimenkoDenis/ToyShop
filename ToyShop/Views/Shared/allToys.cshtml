@@ -1,0 +1,16 @@
+﻿@model Toy
+
+<div class="store__card">
+    <div class="store__card-img">
+        <img class="store__card-pic" src="@Model.img" alt="@Model.name" />
+    </div>
+    <div class="store__card-body">
+        <div class="store__card-category">@Model.Category.categoryName</div>
+        <h3 class="store__card-name">@Model.name</h3>
+    </div>    
+    <div class="store__card-row">
+        <p class="store__card-price">@Model.price.ToString("c")</p>
+        <p class="store__card-cart"><a class="store__card-link" asp-controller="ToyShopCart" asp-action="addToCart" asp-route-id="@Model.id"></a></p>
+    </div>
+    
+</div>

@@ -1,0 +1,18 @@
+@model ToyShopCartViewModel
+<div class="store__cart-wrapper">
+    <h3 class="store__cart-title">Корзина</h3>
+    @foreach (var el in Model.toyShopCart.listToyShopItems)
+    {
+        <div class="store__cart-order">
+            <div class="store__cart-pic">
+                <img class="store__cart-img" src="@el.toy.img" alt="@el.toy.name">
+            </div>
+            <div class="store__cart-body">
+                <p><b>Игрушка:</b> @el.toy.name</p>
+                <p><b>Цена:</b> @el.toy.price.ToString("c")</p>
+            </div>
+        </div>
+    }
+    <hr />
+    <a class="store__cart-btn" asp-controller="Order" asp-action="Checkout">Оплатить</a>
+</div>
