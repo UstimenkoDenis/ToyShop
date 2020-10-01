@@ -41,7 +41,7 @@ namespace ToyShop.Controllers
         }
 
         public IActionResult Complete() {
-            ViewBag.Message = "Заказ успешно обработан";
+            ViewBag.Message = "Спасибо за заказ! Мы скоро свяжемся с вами.";
             return View();
         }
     }
