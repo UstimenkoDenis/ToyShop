@@ -326,6 +326,7 @@ store__list .store__category:nth-child(1) a {
         width: 100%;
         object-fit: cover;
     }
+/*Store cart style start*/
         .store__cart-wrapper {
             grid-column: span 12;  
             display: flex;
@@ -378,6 +379,58 @@ store__list .store__category:nth-child(1) a {
                 text-decoration: none;
                 color: #fff;
             }
+/* Store cart style end*/
+/* Order style start*/ 
+            .store__order {
+                grid-column: span 12;              
+            }
+                .store__order_center {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;  
+                } 
+
+            .store__order-title {
+                font-size: 2rem;
+                line-height: 2rem;
+                font-weight: 700;
+                color: #316380; 
+                margin-bottom: 50px;       
+            }
+
+
+            .store__order-label {
+                font-size: 1.5rem;        
+            }
+    
+            .store__order-row {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            .store__order-input {
+                font-size: 2rem;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 30px;      
+            }
+
+            .store__order-danger {
+                font-size: 1.3rem;
+                color: red;
+                margin-bottom: 20px;
+            }
+
+            .store__order-btn {              
+                font-size: 1.5rem;
+                color: #fff;
+                padding: 20px 40px;
+                background-color: rgb(29, 138, 138); 
+                border-radius: 10px;
+                margin-bottom: 50px;         
+            }
+ /* Order style end*/
 /* Store style end*/
 
 /* About style start*/
