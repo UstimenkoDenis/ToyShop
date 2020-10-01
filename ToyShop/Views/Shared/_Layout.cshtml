@@ -22,13 +22,13 @@
                             <a href="/" class="header__link">Главная</a>
                         </li>
                         <li class="header__item">
-                            <a href="#shop" class="header__link">Магазин</a>
+                            <a class="header__link" asp-controller="Toys" asp-action="List">Магазин</a>
                         </li>
                         <li class="header__item">
                             <a href="/ToyShopCart/" class="header__link">Корзина</a>
                         </li>
                         <li class="header__item">
-                            <a href="#" class="header__link">Оформление заказа</a>
+                            <a class="header__link" asp-controller="Order" asp-action="Checkout">Оформление заказа</a>
                         </li>                        
                     </ul>
                     <div class="header__nav-close">
