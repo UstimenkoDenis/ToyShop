@@ -690,6 +690,10 @@ img {
         font-size: 1.5rem;
     }
 
+    .intro__title {
+        padding-top: 0;
+    }
+
     .store__cat-link {
         font-size: 1rem;
     }
