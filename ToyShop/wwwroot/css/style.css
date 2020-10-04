@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Fonts start */
 /* roboto-regular - latin_cyrillic */
 @font-face {
@@ -568,42 +575,46 @@ store__list .store__category:nth-child(1) a {
 /*Store description style start*/
 .store__desc {
     -ms-grid-column-span: 12;
-    grid-column: span 12;   
+    grid-column: span 12;
 }
-    .store__desc-row {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .store__desc-img {
-        max-width: 400px;
-        margin: 50px;
-    }
+.store__desc-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
 
-    .store__desc-title {
-        font-size:2rem;
-        line-height: 2rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-        padding-top: 30px;
-    }
+.store__desc-img {
+    max-width: 400px;
+    margin: 50px;
+}
 
-    .store__desc-price {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-         margin-bottom: 20px;
-    }
+.store__desc-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
 
-    .store__desc-available {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        color: green;
-        margin-bottom: 20px;
-    }
+.store__desc-price {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
 
-    .store__desc-text {
-        font-size: 1.2rem;
-    }
+.store__desc-available {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    color: green;
+    margin-bottom: 20px;
+}
+
+.store__desc-text {
+    font-size: 1.2rem;
+}
 
 /*Store description style end*/
 /* Store style end*/
@@ -817,7 +828,7 @@ store__list .store__category:nth-child(1) a {
 
         .store__card:nth-child(2) {
             margin-top: 150px;
-        }    
+        }
 }
 
 @media screen and (max-width: 600px) {
