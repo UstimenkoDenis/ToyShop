@@ -2,7 +2,7 @@
 
 <div class="store__card">
     <div class="store__card-img">
-        <img class="store__card-pic" src="@Model.img" alt="@Model.name" />
+        <a asp-controller="Description" asp-action="Index" asp-route-id="@Model.id"><img class="store__card-pic" src="@Model.img" alt="@Model.name" /></a>
     </div>
     <div class="store__card-body">
         <div class="store__card-category">@Model.Category.categoryName</div>

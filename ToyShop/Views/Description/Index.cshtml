@@ -1,0 +1,15 @@
+﻿@model DescriptionViewModel
+
+<div class="store__desc">
+    <div class="store__desc-row">
+        <div class="store__desc-img">
+            <img class="store__desc-pic" src="@Model.getObjectToy.img" alt="@Model.getObjectToy.shortDesc" />
+        </div>
+        <div store__desc-body>
+            <h2 class="store__desc-title">@Model.getObjectToy.name</h2>
+            <p class="store__desc-price">@Model.getObjectToy.price.ToString("c")</p>
+            <p class="store__desc-available">@Model.available</p> 
+        </div>
+    </div>
+    <p class="store__desc-text">@Model.getObjectToy.longDesc</p>
+</div>
