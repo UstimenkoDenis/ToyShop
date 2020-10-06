@@ -10,7 +10,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.Extensions.DependencyInjection;
 using ToyShop.data.interfaces;
-using ToyShop.data.mocks;
 using ToyShop.Data;
 using ToyShop.Data.Repository;
 using ToyShop.Data.models;
