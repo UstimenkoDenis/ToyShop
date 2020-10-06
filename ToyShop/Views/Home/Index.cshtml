@@ -1,14 +1,15 @@
 @model HomeViewModel
+@Html.Partial("Category")
 <div class="store__bestsellers">
     <div class="store__bestsellers-pic">
         <img class="bestseller__img" src="~/img/bestsl.png" alt="best sellers">
     </div>
-        
+
 </div>
 @{
     foreach (Toy toy in Model.FavToys)
     {
         @Html.Partial("AllToys", toy)
-        
+
     };
 }

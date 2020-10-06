@@ -428,6 +428,7 @@ store__list .store__category:nth-child(1) a {
     font-weight: 700;
     margin-bottom: 50px;
     color: #7856a5;
+    margin-top: 60px;
 }
 
 .store__cart-order {

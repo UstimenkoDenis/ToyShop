@@ -1,5 +1,5 @@
 ﻿@model Toy
-
+@Html.Partial("Category")
 <div class="store__card">
     <div class="store__card-img">
         <a asp-controller="Description" asp-action="Index" asp-route-id="@Model.Id"><img class="store__card-pic" src="@Model.Img" alt="@Model.Name" /></a>
@@ -7,10 +7,10 @@
     <div class="store__card-body">
         <div class="store__card-category">@Model.Category.CategoryName</div>
         <h3 class="store__card-name">@Model.Name</h3>
-    </div>    
+    </div>
     <div class="store__card-row">
         <p class="store__card-price">@Model.Price.ToString("c")</p>
         <p class="store__card-cart"><a class="store__card-link" asp-controller="ToyShopCart" asp-action="addToCart" asp-route-id="@Model.Id"></a></p>
     </div>
-    
+
 </div>
