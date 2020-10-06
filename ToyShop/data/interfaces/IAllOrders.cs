@@ -8,6 +8,6 @@ namespace ToyShop.data.interfaces
 {
     public interface IAllOrders
     {
-        void createOrder(Order order);
+        void CreateOrder(Order order);
     }
 }

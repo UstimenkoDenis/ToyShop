@@ -6,16 +6,19 @@ using System.Threading.Tasks;
 using ToyShop.data.interfaces;
 using ToyShop.data.models;
 
-namespace ToyShop.Data.Repository {
-    public class ToyRepository : IAllToys {
-        private readonly AppDBContent appDBContent;
-        public ToyRepository(AppDBContent appDBContent) {
-            this.appDBContent = appDBContent;
+namespace ToyShop.Data.Repository 
+{
+    public class ToyRepository : IAllToys 
+    {
+        private readonly AppDBContent AppDBContent;
+        public ToyRepository(AppDBContent appDBContent) 
+        {
+            this.AppDBContent = appDBContent;
         }
-        public IEnumerable<Toy> Toys => appDBContent.Toy.Include(t => t.Category);
+        public IEnumerable<Toy> Toys => AppDBContent.Toy.Include(t => t.Category);
 
-        public IEnumerable<Toy> getFavToy => appDBContent.Toy.Where(p => p.isFavourite).Include(t => t.Category);
+        public IEnumerable<Toy> GetFavToy => AppDBContent.Toy.Where(p => p.IsFavourite).Include(t => t.Category);
 
-        public Toy getObjectToy(int toyId) => appDBContent.Toy.FirstOrDefault(p => p.id == toyId);
+        public Toy GetObjectToy(int toyId) => AppDBContent.Toy.FirstOrDefault(p => p.Id == toyId);
     }
 }

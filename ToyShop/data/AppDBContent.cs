@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 using ToyShop.data.models;
 using ToyShop.Data.models;
 
-namespace ToyShop.Data {
-    public class AppDBContent : DbContext {
-        public AppDBContent(DbContextOptions<AppDBContent> options ) : base(options) {
+namespace ToyShop.Data 
+{
+    public class AppDBContent : DbContext
+    {
+        public AppDBContent(DbContextOptions<AppDBContent> options ) : base(options) 
+        {
 
         }
 

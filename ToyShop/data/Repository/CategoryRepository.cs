@@ -7,12 +7,13 @@ using ToyShop.data.models;
 
 namespace ToyShop.Data.Repository
 {
-    public class CategoryRepository : IToysCategory {
-        private readonly AppDBContent appDBContent;
+    public class CategoryRepository : IToysCategory 
+    {
+        private readonly AppDBContent AppDBContent;
         public CategoryRepository(AppDBContent appDBContent)
         {
-            this.appDBContent = appDBContent;
+            this.AppDBContent = appDBContent;
         }
-        public IEnumerable<Category> allCategories => appDBContent.Category;
+        public IEnumerable<Category> AllCategories => AppDBContent.Category;
     }
 }

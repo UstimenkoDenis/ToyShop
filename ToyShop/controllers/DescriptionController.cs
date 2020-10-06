@@ -8,7 +8,8 @@ using ToyShop.ViewModels;
 
 namespace ToyShop.controllers
 {
-    public class DescriptionController : Controller {
+    public class DescriptionController : Controller
+    {
 
         private IAllToys _toyRep;
         public DescriptionController(IAllToys toyRep)
@@ -17,18 +18,22 @@ namespace ToyShop.controllers
             
         }
         
-        public ViewResult Index(int id) {
+        public ViewResult Index(int id) 
+        {
             string theToyAvail;
 
-            if (_toyRep.getObjectToy(id).available) {
+            if (_toyRep.GetObjectToy(id).Available) 
+            {
                 theToyAvail = "Есть в наличии";
-            } else {
+            } else
+            {
                 theToyAvail = "Нет в наличии";
             }
 
-                var theToy = new DescriptionViewModel { 
-                getObjectToy = _toyRep.getObjectToy(id),
-                available = theToyAvail
+                var theToy = new DescriptionViewModel 
+                { 
+                    GetObjectToy = _toyRep.GetObjectToy(id),
+                    Available = theToyAvail
                 };
             return View(theToy);
         }

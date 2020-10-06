@@ -11,34 +11,34 @@ namespace ToyShop.Data.Repository
     public class OrdersRepository : IAllOrders
     {
 
-        private readonly AppDBContent appDBContent;
-        private readonly ToyShopCart toyShopCart;
+        private readonly AppDBContent AppDBContent;
+        private readonly ToyShopCart ToyShopCart;
 
         public OrdersRepository(AppDBContent appDBContent, ToyShopCart toyShopCart)
         {
-            this.appDBContent = appDBContent;
-            this.toyShopCart = toyShopCart;
+            this.AppDBContent = appDBContent;
+            this.ToyShopCart = toyShopCart;
         }
 
-        public void createOrder(Order order)
+        public void CreateOrder(Order order)
         {
-            order.orderTime = DateTime.Now;
-            appDBContent.Order.Add(order);
-            appDBContent.SaveChanges();
+            order.OrderTime = DateTime.Now;
+            AppDBContent.Order.Add(order);
+            AppDBContent.SaveChanges();
 
-            var items = toyShopCart.listToyShopItems;
+            var items = ToyShopCart.ListToyShopItems;
 
             foreach (var el in items)
             {
                 var orderDetail = new OrderDetail()
                 {
-                    toyID = el.toy.id,
-                    orderID = order.id,
-                    price = el.toy.price
+                    ToyID = el.toy.Id,
+                    OrderID = order.Id,
+                    Price = el.toy.Price
                 };
-                appDBContent.OrderDetail.Add(orderDetail);
+                AppDBContent.OrderDetail.Add(orderDetail);
             }
-            appDBContent.SaveChanges();
+            AppDBContent.SaveChanges();
         }
     }
 }

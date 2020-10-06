@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using ToyShop.data.models;
 using ToyShop.Data.models;
 
-namespace ToyShop.ViewModels {
-    public class HomeViewModel {
-        public IEnumerable<Toy> favToys { get; set; }
+namespace ToyShop.ViewModels 
+{
+    public class HomeViewModel 
+    {
+        public IEnumerable<Toy> FavToys { get; set; }
     }
 }

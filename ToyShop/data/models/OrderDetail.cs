@@ -8,12 +8,12 @@ namespace ToyShop.data.models
     public class OrderDetail
     {
         
-        public int id { get; set; }
-        public int orderID { get; set; }
-        public int toyID { get; set; }
-        public uint price { get; set; }
-        public virtual Toy toy { get; set; }
-        public virtual Order order { get; set; }
+        public int Id { get; set; }
+        public int OrderID { get; set; }
+        public int ToyID { get; set; }
+        public uint Price { get; set; }
+        public virtual Toy Toy { get; set; }
+        public virtual Order Order { get; set; }
 
     }
 }

@@ -5,38 +5,38 @@
     <h3 class="store__order-title">Оформление заказа</h3>
     <form class="store__order-form store__order_center" asp-action="Checkout" method="post">
         <div class="store__order-group">
-            <label class="store__order-label" asp-for="name"></label>
+            <label class="store__order-label" asp-for="Name"></label>
             <div class="store__order-row store__order_center">
-                <input class="store__order-input" asp-for="name" />
-                <span class="store__order-danger" asp-validation-for="name"></span>
+                <input class="store__order-input" asp-for="Name" />
+                <span class="store__order-danger" asp-validation-for="Name"></span>
             </div>
         </div>
         <div class="store__order-group">
-            <label class="store__order-label" asp-for="surname"></label>
+            <label class="store__order-label" asp-for="Surname"></label>
             <div class="store__order-row store__order_center">
-                <input class="store__order-input" asp-for="surname" />
-                <span class="store__order-danger" asp-validation-for="surname"></span>
+                <input class="store__order-input" asp-for="Surname" />
+                <span class="store__order-danger" asp-validation-for="Surname"></span>
             </div>
         </div>
         <div class="store__order-group">
-            <label class="store__order-label" asp-for="adress"></label>
+            <label class="store__order-label" asp-for="Adress"></label>
             <div class="store__order-row store__order_center">
-                <input class="store__order-input" asp-for="adress" />
-                <span class="store__order-danger" asp-validation-for="adress"></span>
+                <input class="store__order-input" asp-for="Adress" />
+                <span class="store__order-danger" asp-validation-for="Adress"></span>
             </div>
         </div>
         <div class="store__order-group">
-            <label class="store__order-label" asp-for="phone"></label>
+            <label class="store__order-label" asp-for="Phone"></label>
             <div class="store__order-row store__order_center">
-                <input class="store__order-input" asp-for="phone" />
-                <span class="store__order-danger" asp-validation-for="phone"></span>
+                <input class="store__order-input" asp-for="Phone" />
+                <span class="store__order-danger" asp-validation-for="Phone"></span>
             </div>
         </div>
         <div class="store__order-group">
-            <label class="store__order-label" asp-for="email"></label>
+            <label class="store__order-label" asp-for="Email"></label>
             <div class="store__order-row store__order_center">
-                <input class="store__order-input" asp-for="email" />
-                <span class="store__order-danger" asp-validation-for="email"></span>
+                <input class="store__order-input" asp-for="Email" />
+                <span class="store__order-danger" asp-validation-for="Email"></span>
             </div>
         </div>
         <input class="store__order-btn" type="submit" value="Завершить заказ" />
