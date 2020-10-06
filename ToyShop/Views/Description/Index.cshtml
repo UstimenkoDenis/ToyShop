@@ -1,5 +1,5 @@
 ﻿@model DescriptionViewModel
-
+@Html.Partial("Category")
 <div class="store__desc">
     <div class="store__desc-row">
         <div class="store__desc-img">
@@ -8,13 +8,13 @@
         <div store__desc-body>
             <h2 class="store__desc-title">@Model.GetObjectToy.Name</h2>
             <p class="store__desc-price">@Model.GetObjectToy.Price.ToString("c")</p>
-            <p class="store__desc-available">@Model.Available</p>           
-            @{  if (Model.GetObjectToy.Available)
+            <p class="store__desc-available">@Model.Available</p>
+            @{ if (Model.GetObjectToy.Available)
                 {
                     <div class="store__desc-cart"><a class="store__desc-link" asp-controller="ToyShopCart" asp-action="addToCart" asp-route-id="@Model.GetObjectToy.Id">Добавить в карзину</a></div>
 
                 }
-            }            
+            }
         </div>
     </div>
     <p class="store__desc-text">@Model.GetObjectToy.LongDesc</p>
