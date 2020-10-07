@@ -1,9 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ToyShop.data.interfaces;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using ToyShop.Data.models;
 using ToyShop.data.models;
 
@@ -30,7 +26,7 @@ namespace ToyShop.Controllers
         public IActionResult Checkout(Order order) 
         {
 
-            ToyShopCart.ListToyShopItems = ToyShopCart.getToyShopItems();
+            ToyShopCart.ListToyShopItems = ToyShopCart.GetToyShopItems();
 
             if (ToyShopCart.ListToyShopItems.Count == 0)
             {

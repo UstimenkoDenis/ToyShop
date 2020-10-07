@@ -21,7 +21,7 @@ namespace ToyShop.Controllers {
 
         public ViewResult Index() 
         {
-            var items = _toyShopCart.getToyShopItems();
+            var items = _toyShopCart.GetToyShopItems();
             _toyShopCart.ListToyShopItems = items;
 
             var obj = new ToyShopCartViewModel 
@@ -39,6 +39,15 @@ namespace ToyShop.Controllers {
             {
                 _toyShopCart.AddToCart(item);
             }
+            return RedirectToAction("Index");
+        }
+
+        public RedirectToActionResult RemoveFromCart(int id)
+        {
+            
+            _toyShopCart.RemoveFromCart(id);
+           
+
             return RedirectToAction("Index");
         }
     }

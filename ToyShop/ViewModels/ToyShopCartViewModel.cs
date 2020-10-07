@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ToyShop.Data.models;
+﻿using ToyShop.Data.models;
 
 namespace ToyShop.ViewModels 
 {

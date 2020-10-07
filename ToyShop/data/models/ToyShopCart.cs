@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using ToyShop.data.models;
 
 namespace ToyShop.Data.models 
@@ -42,7 +43,19 @@ namespace ToyShop.Data.models
             AppDBContent.SaveChanges();
         }
 
-        public List<ToyShopCartItem> getToyShopItems() 
+        public void RemoveFromCart(int id)
+        {
+            
+            ToyShopCartItem itemToy = AppDBContent.ToyShopCartItem.Where(i => i.id == id).FirstOrDefault();
+            if(itemToy != null)
+            {
+                Console.Write("Hello");
+                AppDBContent.ToyShopCartItem.Remove(itemToy);
+                AppDBContent.SaveChanges();
+            }    
+        }
+
+        public List<ToyShopCartItem> GetToyShopItems() 
         {
             return AppDBContent.ToyShopCartItem.Where(t => t.ToyShopCartId == ToyShopCartId).Include(s => s.toy).ToList();
         }

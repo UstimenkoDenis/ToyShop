@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using ToyShop.data.interfaces;
 using ToyShop.data.models;
 using ToyShop.Data.models;
