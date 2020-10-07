@@ -20,16 +20,22 @@ namespace ToyShop.Controllers {
         }
 
         public ViewResult Index() 
-        {
+        {            
             var items = _toyShopCart.GetToyShopItems();
             _toyShopCart.ListToyShopItems = items;
 
-            var obj = new ToyShopCartViewModel 
+            if (_toyShopCart.ListToyShopItems.Count != 0)
             {
-                ToyShopCart = _toyShopCart
-            };
+                var obj = new ToyShopCartViewModel
+                {
+                    ToyShopCart = _toyShopCart
+                };
 
-            return View(obj);
+                return View(obj);
+            }
+
+            return View("CartIsEmpty");
+            
         }
 
         public RedirectToActionResult AddToCart(int id) 
@@ -49,6 +55,12 @@ namespace ToyShop.Controllers {
            
 
             return RedirectToAction("Index");
+        }
+
+        public IActionResult CartIsEmpty()
+        {
+            ViewBag.Message = "Корзина не содержит товаров.";
+            return View();
         }
     }
 }

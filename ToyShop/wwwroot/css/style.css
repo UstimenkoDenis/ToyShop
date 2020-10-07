@@ -515,9 +515,23 @@ store__list .store__category:nth-child(1) a {
         top: 2px;
         box-shadow: 0px;
     }
-    /* Store cart style end*/
-    /* Order style start*/
-    .store__order {
+.store__cart-empty {
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+    width: 100%;
+    color: darkcyan;
+    font-size: 3rem;
+    line-height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
+
+/* Store cart style end*/
+/* Order style start*/
+.store__order {
     -ms-grid-column-span: 12;
     grid-column: span 12;
 }
