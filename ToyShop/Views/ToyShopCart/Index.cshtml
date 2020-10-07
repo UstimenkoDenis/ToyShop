@@ -13,7 +13,7 @@
                     <p><b>Цена:</b> @el.toy.Price.ToString("c")</p>
                 </div>
             </div>            
-            <a class="store__cart-delete" asp-controller="ToysShopCart" asp-action="RemoveFromCart" asp-route-id="@el.toy.Id">Удалить @el.toy.Id</a>
+            <a class="store__cart-delete" asp-controller="ToyShopCart" asp-action="RemoveFromCart" asp-route-id="@el.toy.Id">Удалить</a>
         </div>
     }
     <hr />  

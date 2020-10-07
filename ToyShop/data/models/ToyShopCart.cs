@@ -46,10 +46,9 @@ namespace ToyShop.Data.models
         public void RemoveFromCart(int id)
         {
             
-            ToyShopCartItem itemToy = AppDBContent.ToyShopCartItem.Where(i => i.id == id).FirstOrDefault();
+            ToyShopCartItem itemToy = AppDBContent.ToyShopCartItem.Where(i => i.toy.Id == id).FirstOrDefault();
             if(itemToy != null)
             {
-                Console.Write("Hello");
                 AppDBContent.ToyShopCartItem.Remove(itemToy);
                 AppDBContent.SaveChanges();
             }    
