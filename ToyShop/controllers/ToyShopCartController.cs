@@ -59,7 +59,6 @@ namespace ToyShop.Controllers {
 
         public IActionResult CartIsEmpty()
         {
-            ViewBag.Message = "Корзина не содержит товаров.";
             return View();
         }
     }

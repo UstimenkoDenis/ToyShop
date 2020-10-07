@@ -596,6 +596,20 @@ store__list .store__category:nth-child(1) a {
     border-radius: 10px;
     margin-bottom: 50px;
 }
+
+.store__order-alert {
+    -ms-grid-column-span: 12;
+    grid-column: span 12;
+    width: 100%;
+    color: darkcyan;
+    font-size: 2rem;
+    line-height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+}
 /* Order style end*/
 
 /* Complete style start*/

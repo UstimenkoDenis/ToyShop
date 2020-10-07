@@ -19,7 +19,15 @@ namespace ToyShop.Controllers
 
         public IActionResult Checkout()
         {
-            return View();
+            var items = ToyShopCart.GetToyShopItems();
+            ToyShopCart.ListToyShopItems = items;
+
+            if (ToyShopCart.ListToyShopItems.Count != 0)
+            {
+                return View();                
+            }
+
+            return View("Alert");
         }
 
         [HttpPost]
@@ -41,7 +49,10 @@ namespace ToyShop.Controllers
 
             return View(order);
         }
-
+        public IActionResult Alert()
+        {
+            return View();
+        }
         public IActionResult Complete() 
         {
             ViewBag.Message = "Спасибо за заказ! Мы скоро свяжемся с вами.";
