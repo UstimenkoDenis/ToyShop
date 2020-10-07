@@ -32,7 +32,7 @@ namespace ToyShop.Controllers {
             return View(obj);
         }
 
-        public RedirectToActionResult addToCart(int id) 
+        public RedirectToActionResult AddToCart(int id) 
         {
             var item = _toyRep.Toys.FirstOrDefault(i => i.Id == id);
             if(item != null) 

@@ -4,15 +4,18 @@
     @foreach (var el in Model.ToyShopCart.ListToyShopItems)
     {
         <div class="store__cart-order">
-            <div class="store__cart-pic">
-                <img class="store__cart-img" src="@el.toy.Img" alt="@el.toy.Name">
-            </div>
-            <div class="store__cart-body">
-                <p><b>Игрушка:</b> @el.toy.Name</p>
-                <p><b>Цена:</b> @el.toy.Price.ToString("c")</p>
-            </div>
+            <div class="store__cart-block">
+                <div class="store__cart-pic">
+                    <img class="store__cart-img" src="@el.toy.Img" alt="@el.toy.Name">
+                </div>
+                <div class="store__cart-body">
+                    <p><b>Игрушка:</b> @el.toy.Name</p>
+                    <p><b>Цена:</b> @el.toy.Price.ToString("c")</p>
+                </div>
+            </div>            
+            <a class="store__cart-delete" asp-controller="ToysShopCart" asp-action="RemoveFromCart" asp-route-id="@el.toy.Id">Удалить</a>
         </div>
     }
-    <hr />
+    <hr />  
     <a class="store__cart-btn" asp-controller="Order" asp-action="Checkout">Оплатить</a>
 </div>

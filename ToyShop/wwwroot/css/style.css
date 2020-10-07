@@ -436,6 +436,7 @@ store__list .store__category:nth-child(1) a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-between;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -471,6 +472,7 @@ store__list .store__category:nth-child(1) a {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
+    margin: 0 auto;
 }
 
 .store__cart-btn {
@@ -485,9 +487,37 @@ store__list .store__category:nth-child(1) a {
     text-decoration: none;
     color: #fff;
 }
-/* Store cart style end*/
-/* Order style start*/
-.store__order {
+
+.store__cart-block {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.store__cart-delete {
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    left 0;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    padding: 20px 30px;
+    margin-right: 30px;
+    background-color: crimson;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(3, 3, 5, 0.16);
+}
+
+    .store__cart-delete:active {
+        top: 2px;
+        box-shadow: 0px;
+    }
+    /* Store cart style end*/
+    /* Order style start*/
+    .store__order {
     -ms-grid-column-span: 12;
     grid-column: span 12;
 }
