@@ -55,6 +55,7 @@ namespace ToyShop.Controllers
         }
         public IActionResult Complete() 
         {
+            ToyShopCart.RemoveAllFromCart();
             ViewBag.Message = "Спасибо за заказ! Мы скоро свяжемся с вами.";
             return View();
         }

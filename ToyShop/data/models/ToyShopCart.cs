@@ -4,8 +4,6 @@ using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Threading.Tasks.Dataflow;
 using ToyShop.data.models;
 
 namespace ToyShop.Data.models 
@@ -52,6 +50,13 @@ namespace ToyShop.Data.models
                 AppDBContent.ToyShopCartItem.Remove(itemToy);
                 AppDBContent.SaveChanges();
             }    
+        }
+
+        public void RemoveAllFromCart()
+        {
+            AppDBContent.ToyShopCartItem.RemoveRange(AppDBContent.ToyShopCartItem);
+            AppDBContent.SaveChanges();
+                        
         }
 
         public List<ToyShopCartItem> GetToyShopItems() 
